@@ -1,0 +1,442 @@
+﻿***Seeding
+When the database has just been created and you need initial data in your database
+this shouls support calling server functions especially those before the query is excuted
+
+***Drone Security
+This is a simple membership process which involves roles and assigning functionality to roles
+then users are registered under specific roles
+Or securing a server side function
+
+The ability to return a user with his roles on login so that the interface can know how to diable
+and enable certain features but also because od the backend security even if a user tries to
+enable disabled features, the server performs checks before executing the query e,g it will find 
+out if that user has a role that can create data or update data or delete the data
+By default all tables are secured unless explicitly specified, as long as you have a seurity
+node in your hive.
+
+These are internal implementations
+"BeeDsRole":{
+	"p" : "BeeDsRoles",
+	"a" : "pkBeeDsRoleId strName strDescription"
+},
+"BeeDsAccess":{
+	"p" : "BeeDsAccesses",
+	"a" : "pkBeeDsAccessId intBeeDsRoleId strCombName intCanDo"
+},
+"BeeDsUserInRole":{
+	"p" : "BeeDsUserInRoles",
+	"a" : "pkBeeDsUserInRoleId intRoleId intUserId"
+}
+when ever a user has a security node then these combs are created on hive creation
+
+Access the current logged in user an object in the hive file as _u
+
+
+****_oDisOne : "fkgkg" works like _aFoo
+
+****time out for auth token		
+
+****Default values and pins
+pins are such that a certain value e.g userId is replaced by a cerain value when
+inserting, also in querying dor data its included as an _and_ with brackets and also as 
+an _and_ in updating and deleting, you could however have rules that this doesnot work
+if the person is like an admin.
+default values apply when doing data schema on table creation
+
+****After math functions should all have a result of null if there are not results from the query
+the explanation is that after math functions depend on the results, one is not expected to use after
+math functions if they dont depend on results, this would be awaste
+
+
+***Context
+A bee can take up a nector as well as a context of execution, so that when honey comes back you
+have access to the context
+
+
+***Dom Data Queries
+
+
+***transformers e.g
+_t:["Planned->Mon_1..12=0"]
+
+_tPlanned:[],
+//will just extract every value of the planned parameter
+//and put it into the array
+_tPlanned:[{Mon:12}],
+//will just extract every value of the planned parameter
+//and put it into the array
+//for those whose value of Mon is 12
+_tPlanned:[{Mon:12, UserId:1}],
+//will just extract every value of the planned parameter
+//and put it into the array
+//for those whose value of Mon is 12
+//and UserId is 1
+_tPlanned:[{Mon:12, UserId:1, _:0}],
+//will just extract every value of the planned parameter
+//and put it into the array
+//for those whose value of Mon is 12
+//and UserId is 1
+//but if no such an object is found return a value of 0
+//and put it into the results
+_tPlanned:[{_aMon:"range 1 12", UserId:1, _:0}],
+//will just extract every value of the planned parameter
+//and put it into the array
+//for those whose value of Mon is  a range from 1 to 12
+//and UserId is 1
+//but if no such an object is found return a value of 0
+//and put it into the results
+
+
+***search for the demo app
+
+***Execution Context
+
+****
+_g group by to accept entries like +Mon->Month_EntryDate
+
+*****
+invisible fields pass though when zeeping
+
+
+To implement detacting changes to the hive config and generating the nessary sql that is required
+Working with enums
+Adding primary and foreign key constraints
+including nulls and default values to tables on creation
+where clause
+nesting trees and deep linking branch queries for children lists
+realtime hooks e.g on row added, removed, updated, etc like firebase but not working like firebase
+to incllude selecting all attributes by usin * or not specifying means fetch all atrributes and minus(-) means exclude
+
+a queen bee can make honey and return honey in one single request
+
+
+"flowers":{
+		"login":{
+			"way" : "get",
+			"nector" : {
+				"Uzer": {
+					"a" : "UserName Password +Token",
+					"_fstrEncPassword": "encrypt _@param2 _mySweetHoney",
+					"_w":{
+						"UserName_e" : "_@param1",
+						"_and_Password_e" : "_fstrEncPassword"
+					},
+					"_f_joined" : "join UserName _: _@param2",
+					"_f_Token" : "encrypt _f_joined _mySpecialKey",
+					"Roles":[{}],
+					UserInRoles:[{
+						Role: {
+							a:"*"
+						}
+					}]
+				}
+			}
+		}
+	},
+here the roles table is a child of user in role but we can choose to have
+UserInRoles :[{Role:{}}] or just query for the roles list because a user can belong to many roles
+this is escavation: User -> UserInRoles <- Role
+								|||
+								VVV
+								Roles (extract)
+support for definitions like Roles[] ==> which means insert for me a role object so that the query is Roles[{a:"*"}]
+							  
+
+support for transactions
+
+to query for * and to leave out some atributes ie *, -Name
+
+orderby, limit, pagination
+
+run only specific parts of your hive e.g seeds or seeds_users[1]
+
+ranges and pagination
+
+to skip these entries e.g when processing objects/nodes
+if (combKey.Equals("_errors"))
+{
+    continue;
+}
+invisible cellNames
+
+use path to get values from a json Object instead of loopings
+
+unique cell values  as in clumns that can only have one unique value but not primary keys this may already be there in sql,, like u declare or anotate that
+this column only will have unque values but the column is not a primary key, and also look at the combination of thes i.e that
+a combination of a value from columnA and a value from columnB is unique but this will be in like version five
+
+named requests which have parameter place holders and are pust as part of the hive, and can also be secured
+
+errors response _errors:[], sending mail about exceptions of a certain type/level or to a monitoring app in realtime, push notifications
+
+hive seed attributes and fk datatype , a settings to enforce pk-fk relationships
+
+limit on select statements 
+pagination
+
+uploading of files
+
+custom functions or hooks extensibility
+
+executing of different sql statements using multithreading or in parrallel
+
+0758037919
+
+support for indexing e.g in deep links _vDispatches[3]_ProductId or _vDispatches_i45_ProductId
+
+server side validations, these rules work on both updating and deleting scenerials
+
+integretity checkers or settings
+
+default values
+
+************ Create a shop that sales tech t-shirts with designs that depit bee, c# etc to maintain the project
+
+*****templates have access to the nector, immediate values , after math values, honey etc and hive
+but they are all relative links to a .html file our interest is just to pick the contents of this file
+
+**fastest bee, we have a cerain specification fro an app and we hold acompetitions on who becomes the fatstest bee
+they win prices according to their time and score, creativity etc
+
+****tours let the bee tour your interface and take your users by storm
+
+deep _v linked or look up where we dont lookup from only the root node attributes but search or navigate the entire scope
+e.g _vProduct_ProductType_ProductId
+extrapolating e.g user{ Roles:[] }  via UserInRole
+
+some thing that can extract for you the hive for navigational purposes of lint for text editors from your hive configuration
+for the diffent languages -- c#, js, php, java, swift or Ide's
+
+to prevent deep nesting to like 5 levels, its also a security mechanism, and this can be a setup in the users hive
+
+In the where cluase we can just group things together either in [{},{}] or use _g1 closes with _1g
+
+
+!Bees dont like underscores so never use them in our nector or hive definitions, they are very personnel with such things, the same can be said about a
+
+!change of an attribute scent will produce a change in the major version
+
+a hostable backend is one you can just deploy to iis without the need to exyend its functinality
+but if you need to include it in your project then use the nuget package
+
+an extensible bee
+
+Bee as a service ===> hosted bee like firebase apps
+
+string insertedID = "";
+
+string query = "INSERT INTO users" +
+                 " (name, lastname)" +
+                 " VALUES (@Name, @LastName);" +
+                 " SELECT SCOPE_IDENTITY();";
+
+using (var dbconn = new SqlConnection("your connection string here") )
+using (var dbcm = new SqlCommand(query, dbconn) )
+{
+    dbcm.Parameters.Add("@Name", SqlDbType.VarChar, 50).Value = txtName.Text;
+    dbcm.Parameters.Add("@LastName", SqlDbType.VarChar, 50).Value = txtLastName.Text;
+
+    dbconn.Open();
+    insertedID = dbcm .ExecuteScalar().ToString();
+}
+
+***client sidde catching and offline capabilities
+
+***can the retain _r retain every thing * or a batch of staff jsut build on top of this
+
+***String to jobject to json OR string to json
+{
+    _fLogin: {
+        username: "nyolamike",
+        password: "qwertyb33",
+        _: [{
+            _a: "UserId",
+            UserInRoles: [{
+                Role: {
+                    Accesses: [{}],
+                    UserInRoles: [{
+                        User: {}
+                    }]
+                }
+            }]
+        }]
+    },
+    _errors: []
+};//ok
+e.g .get(function(honey){}).from("UserInRoles[Role.Accesses[]]");
+
+
+**ability to query for a valuables value up or down a tree even in children
+
+
+***adding in other culture via hive but leaving the default to "en-US"
+
+***on creating the db the comb should check if there is already an existing comb of the name
+***should not be case sensitive
+
+***You need to make the cell types and honey types uniform
+
+***Stings this is when we have the ability that a user will only access and affect only the data that is theirs
+
+****Phone numbers should be in international format. develop a library to change them to local format ect
+
+***triggers and schedules
+you can for example set a rule that if a user of name mike
+ever registers then do ...
+or  just the normal trigeers
+
+***recovery method can be sms, email, sms&email or link
+
+
+***Things like count(), First(), Last(), Sum(), OrderBy, Pagination, DateFormating, 21Minutes Ago, etc
+here it doesnot matter if MustBuys or Category is clled as an object or array
+these queries will return an object
+==>ORDER BY IncomeId DESC, Amount ASC, IncomeItemId ASC, IncomeCategoryId DESC 
+{
+	Items:[{
+		_asc_:"Name Size",
+		_dsc_:"ItemId"
+	}],
+	Users:[{
+		_dsc_:"Name"
+	}],
+	_qCount:{
+		Users:[{
+			_w:{
+				_$Status_e: "ok",
+				_and__$CodeDate_e: '_@d_now'
+			}
+		}],
+		Items:[]
+	},
+	_qFirst:{
+		Item:{},
+		User:{}
+	},
+	_qLast:{
+		Category:{}
+	},
+	_qSum:{
+		_zTotalSpending_MustBuys:[{
+			_a:"Price BoughtPrice",
+			_w:{
+				_$WasBought_e: true
+			}
+		}],
+		_zJanBudget_MustBuys:[{
+			_a:"Price",
+			_w:{
+				_$WasBought_e: false,
+				_and__$EntryDate_gte: '2017-01-01',
+				_and__$EntryDate_lte: '2017-01-30'
+			}
+		}],
+	},
+	_qpg_1_MustBuys_20:[],
+	_qpg_2_MustBuys_20:[],
+	_qpg_1_MustBuys_40:[],
+	_qpg_2_MustBuys_40:[],
+	MustBuys:[{
+		_a: "EntryDate +CoolDate +When",
+		_j_strCoolDate:'_@d_format _EntryDate _MM/YY',
+		_j_strWhen : '_@d_ago _EntryDate'
+	}]
+}
+
+///SELECT C.custid, COUNT(O.orderid) AS numorders
+FROM Sales.Customers AS C
+LEFT OUTER JOIN Sales.Orders AS O
+ON C.custid = O.custid
+GROUP BY C.custid;
+
+{
+	Custmers:[{
+		_a: "CustomerId",
+		_qCount:{
+			Orders : []
+		}
+	}]
+}
+
+
+///
+SELECT
+empid,
+YEAR(orderdate) AS orderyear,
+SUM(freight) AS totalfreight,
+COUNT(*) AS numorders
+FROM Sales.Orders
+WHERE custid = 71
+GROUP BY empid, YEAR(orderdate);
+
+{
+	Orders:[{
+		_a:"EmployeeId Year(OrderDate)OrderYear Sum(Freight)TotalFreight Count(*)NumOrders",
+		_g:"EmployeeId Year(OrderDate)",
+		_w_$CustomerId_e:71
+	}]
+
+}
+
+{
+	Orders:[{
+		_a:"EmployeeId +OrderYear->Year_OrderDate _qSum_Freight+TotalFreight +NumOrders->Count_* ",
+		_g:"EmployeeId Year(OrderDate)",
+		_w_$CustomerId_e:71
+	}]
+}
+
+_a: "+PriceC"
+_j_: "coma Price"
+
+//COUNT, SUM, AVG, MIN, or MAX
+
+***mobile money providers e.g pesapal, beyonic, trueafrica etc
+
+
+***Logging, Audit Trials, error logging and emails alerts 
+sent sms and email through your bee
+
+***implement end to end data encryption
+
+***how can bee be decentralised and work with blockchain technology
+
+***Offline Ability, and Sync
+
+***Facebook login, google, etc
+
+***Push notifications on mobile and webbrowsers
+
+***triggers and schedules e.g sending mails and campains or sms reminders
+
+***To return values e.g money considering the current rate of the dollar, euro
+***To have the metrics system in place and configurable
+e.g 1km = 1000mters
+***Access to pluralisations when some one has a value,e.g 0 --> 0likes or no likes or jsut any empty string , 1 --> 1 like
+
+***Leave the database without using strick rules on relationships but
+allow a user to specify a flag like deleteWithIntegrity : true
+so with that set to true, a the egine will figure out the childtables, arrange them in order, and then delete
+starting with the furmost child
+
+
+***make the delete sentive in that there could be a setting that prevents the delete from deleting related child data
+but by defaault removing a parent removes the children
+also a setting to follow strick data relationships or constraints or to just be easy and clumsy
+
+
+FEATURES OF THE BEE
+
+=>Get exactly what you need
+=>Organic Queries //query data like a boss
+=>Server Side Functions
+=>Extensible/ Plugins
+=>Drone Security
+=>Invisible Data 
+=>RealTimeQueries
+=>Error Loging and Reporting
+=>Baas
+=>Self Host on your server
+=>File Upload and Download
+=>Scallable
+=>Formats like json, xml, html

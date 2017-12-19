@@ -1,0 +1,17 @@
+﻿{
+	"location":"Data Source=DESKTOP-CT0EIC2\\CLOUDSERVER;Initial Catalog=KOPERZ;Persist Security Info=False;User ID=sa;Password=cloudco;Connect Timeout=300",
+	"mood":"dev",
+	"combs" : {
+		"Country":"pkCountryId strName strCode strShortName imgFlag",
+		"City": "pkCityId fkCountryId strName strOther img_Image",
+		"Player" : "pkPlayerId fkCityId strNickName imgAvatar strPhoneNumber",
+		"GameCategory" : "pkGameCategoryId strName strIcon strDescription",
+		"OutcomeCategory":"pkOutcomeCategoryId strName strIcon strDescription",
+		"PlayedGame" : "pkPlayedGameId fkPlayerId fkGameId dteTimePlayed strComment",
+		"Game": "pkGameId fkCityId fkGameCategoryId imgImage dteStartTime  dteEndTime strTitle  bolIsEvaluated dte_EvaluationDate dteDateCreated",
+		"Outcome":"pkOutcomeId fkGameId fkOutcomeCategoryId strImage strTitle intChances  dblPoints bolHasTimeBonus bolHasProximityScore dblLossPerWrongPrediction dteDateCreated",
+		"Prediction": "pkPredictionId fkPlayedGameId fkOutcomeId dteTimeOfPrediction dblStake dblScore dblTimeScore dblProximityScore dblStakeScore dblLoss dblTotalScore bolWasPredictionCorrect bolIsEvaluated dte_EvaluationDate ",
+		"OutcomeRange":"pkOutcomeRangeId fkOutcomeId strValue dteCreated dte_EvaluationDate",
+		"Guide":"pkGuideId fkOutcomeId strGuideType strValue"
+	}
+}

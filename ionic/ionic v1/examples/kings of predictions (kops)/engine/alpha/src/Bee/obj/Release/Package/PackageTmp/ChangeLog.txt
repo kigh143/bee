@@ -1,0 +1,114 @@
+﻿external interfaces determine the version number
+auth
+{}
+[]
+a
+_a
+p		
+_$
+_r
+_o
+_f
+_f_
+*
+-
++
+location
+combs
+mood
+seeds
+security
+flowers
+way
+get
+post
+update
+delete
+encrypt
+_@param2
+_
+join
+add
+
+//filters
+_w
+_and_
+_andb
+_or_
+_orb_
+_ltoe
+_gtoe
+_lt
+_gt
+_e 
+_ne
+_b_
+_d_
+_s
+
+
+//data base types
+inv_
+pk
+int
+int_
+dbl
+dbl_
+str
+str_
+dte
+dte_
+enm
+enm_
+bol
+bol_
+fk
+
+//security
+"Role":{
+	"p" : "Roles",
+	"a" : "BeeDsRoleId Name Description"
+},
+"BeeDsAccess":{
+	"p" : "BeeDsAccesses",
+	"a" : "AccessId RoleId CombName CanDo"
+},
+"BeeDsUserInRole":{
+	"p" : "BeeDsUserInRoles",
+	"a" : "UserInRoleId RoleId UserId"
+}
+
+
+
+@v0.0.0
+09/13/2017
+1)Changed the name space from bee to Bee
+2)Fixed _r and _o random insertion to use last inserted identity
+3)Refactored the processing of get requests and introduced new classes and static refrences and  constants
+
+moved to version v0.0.1
+why: adding child list queries
+
+Version 0.1.0
+=>[10/02/2017 -- 10/02/2017]Changed to database B4US (before u spend)
+=>[10/02/2017 -- 10/03/2017]Adding [dbo].[tableName].[ColName] syntax internal support
+so that user can use combs  having names like user
+=>[10/03/2017 -- 10/03/2017]Security, bootstraping security tables if one has a security node defined
+=>[10/03/2017 -- 10/04/2017]Seeding the newly created database with initial data
+*Added checking for data type from invisible fields in Hive.ExtractType
+==>[10/03/2017 -- ]Implement Authentication attribute
+==>[10/05/2017 -- ]Native flowers like login, register User
+
+Version 0.2.0
+=>[10/07/2017 -- ]Restructure the engine, make it standard and fix issue with deep linking nd navigation
+n==>cn-->l-->o==>cn
+              ==>s
+	  -->o
+ ==>s
+
+Version 0.3.0
+--Add image processing library 
+https://www.hanselman.com/blog/NuGetPackageOfTheWeekImageProcessorLightweightImageManipulationInC.aspx
+https://stackoverflow.com/questions/18766055/copy-memorystream-to-filestream-and-save-the-file
+https://stackoverflow.com/questions/3879650/create-file-and-save-to-it-using-memorystream
+

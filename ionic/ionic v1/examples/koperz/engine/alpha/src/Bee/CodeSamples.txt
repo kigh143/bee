@@ -1,0 +1,204 @@
+﻿//if you have setup drone security
+var conn = Bee.Hive.GetConnection();
+bool hasDroneSecurity = Bee.Hive.hasDroneSecurity();
+if (hasDroneSecurity == true)
+{
+    //AuthenticationHeaderValue authHeader = Request.Headers.Authorization;
+    //if (authHeader == null || authHeader.Scheme != "Basic")
+    //{
+    //    errors.Add("Drone Security Alert, You donot have access  403");
+    //    if (has_errosNode == true)
+    //    {
+    //        foreach (string error in errors)
+    //        {
+    //            ((JArray)honey["_errors"]).Add(error);
+    //        }
+    //    }
+    //    return honey;
+    //}
+
+
+    //string encodedCredentials = authHeader.Parameter;
+}
+
+
+string flowerName = node.Key.Substring(2);
+                    JObject flower = (JObject)Bee.Engine.Hive[flowerName];
+                    JObject nector = (JObject)flower[Bee.Engine.RawNectorName];
+                    //extend  the nector with users inclusion sent
+                    Bee.Queen.include(ref nector, (JObject)node.Value, ref env);
+                    String way = (String)flower[Bee.Engine.ActionName];
+                    if (way.Equals(Bee.Engine.GetActionName))
+                    {
+                        JObject flowerHoney = Bee.Workers.ProcessGet(nector, env.Auth, env.IsFlowerCall, env);
+                        if (flowerHoney == null)
+                        {
+                            env.Honey.Add(flowerName, null);
+                        }
+                        else
+                        {
+                            dynamic x = env.Honey[flowerName];
+                            if (x == null)
+                            {
+                                env.Honey.Add(flowerName, new JObject());
+                            }
+                            foreach (var flowerHoneyNode in flowerHoney)
+                            {
+                                if (flowerHoneyNode.Value.Type == JTokenType.Object)
+                                {
+                                    var temp = (JObject)flowerHoneyNode.Value;
+                                    foreach (var innerNode in temp)
+                                    {
+                                        ((JObject)env.Honey[flowerName]).Add(innerNode.Key, innerNode.Value);
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
+
+
+
+//sample staff is here
+List<string> invisiblePaths = new List<string>();
+                    int numberOfColumns = reader.FieldCount;
+                    //the reader will have the comb attributes as well as attributes for the parent combs
+                    //so after the end of this loop both this comb attributes and those of all its parents
+                    //will be filled in
+                    while (reader.Read())
+                    {
+                        bool isActuallyQueringOneObject = false;
+                        String childrenPathTest = "";
+
+
+                        for (int columnIndex = 0; columnIndex < numberOfColumns; columnIndex++)
+                        {
+                            childrenPathTest = "";
+                            string pathToCellValue = reader.GetName(columnIndex);
+                            Object cellValue = reader.GetValue(columnIndex);
+
+                            dataCells.Add(new DataCell(){ pathToCellValue = pathToCellValue, cellValue = cellValue});
+
+                            if (pathToCellValue.StartsWith(Bee.Engine.PathObjectIndicator) && isActuallyQueringOneObject == false)
+                            {
+                                isActuallyQueringOneObject = true;
+                            }
+                            
+                            
+                            env.CurrentHoneyRef = env.Honey;
+                            string[] pathParts = pathToCellValue.Split('_');
+                            for (int pi = 0; pi < pathParts.Length - 1; pi++) //this is for a single object
+                            {
+                                string pathSegment = pathParts[pi];
+                                childrenPathTest += pathSegment + "_";
+                                bool isAList = (pathSegment.StartsWith(Bee.Engine.PathListIndicator)) ? true : false;
+                                string nodeName = pathSegment.Substring(1);
+                                JToken node = env.CurrentHoneyRef[nodeName];
+                                if (node == null)
+                                {
+                                    if (isAList)
+                                    {
+                                        ((JObject)env.CurrentHoneyRef).Add(nodeName, new JArray());
+                                        ((JArray)(((JObject)env.CurrentHoneyRef)[nodeName])).Add(new JObject()); //get a refrence to this array and add a new Object
+                                        env.CurrentHoneyRef = ((JArray)(((JObject)env.CurrentHoneyRef)[nodeName]))[0]; //get a reference to this new object
+                                    }
+                                    else
+                                    {
+                                        ((JObject)env.CurrentHoneyRef).Add(nodeName, new JObject());
+                                        env.CurrentHoneyRef = ((JObject)env.CurrentHoneyRef)[nodeName];
+                                    }
+                                }
+                                else
+                                {
+                                    if (isAList && columnIndex == 0 && env.IsEvaluatingCsql == false)
+                                    {
+                                        ((JArray)node).Add(new JObject());
+                                    }
+                                    env.CurrentHoneyRef = (isAList) ? ((JArray)node).Last() : ((JObject)env.CurrentHoneyRef)[nodeName];
+                                }
+                            }//end column for loop
+                            //add the value at the current refrence
+                            ((JObject)env.CurrentHoneyRef).Add(pathParts.Last(), new JValue(cellValue));
+                        }//end of for loop for columns
+                    }//end while (reader.Read())
+
+
+//after creating a single objectthis code below has to run
+                    //check if this objects path has any need for children
+                    List<KeyValuePair<String, Sql>> listOfChildSqls = env.ChildSqls.Where(csql =>
+                        csql.Key.StartsWith(childrenPathTest) &&
+                        csql.Key.Substring(childrenPathTest.Length).Split('_').Length == 1
+                    ).ToList();
+                    if (listOfChildSqls != null && listOfChildSqls.Count() > 0)
+                    {
+                        foreach (KeyValuePair<String, Sql> childSql in listOfChildSqls)
+                        {
+                            String path = childSql.Key;
+                            String[] pathParts = path.Split('_');
+                            Sql csql = childSql.Value;
+                            csql.Prepare(ref env);
+                            JToken formerCurrentHoneyRef = env.CurrentHoneyRef;
+                            env.IsEvaluatingCsql = true;
+                            Bee.Workers.MakeHoney(csql, ref env);
+                            env.CurrentHoneyRef = formerCurrentHoneyRef;
+                            env.IsEvaluatingCsql = false;
+                        }
+                    }
+                    //this should be the last logic in this loop
+                    if (isActuallyQueringOneObject == true)
+                    {
+                        break;
+                    }
+
+
+
+////////
+String fileNameToSave = filesPath + Path.GetFileName(uniqueFileName);
+                    postedFile.SaveAs(fileNameToSave);
+
+bool isImage = originalFileName.EndsWith(".jpg", StringComparison.CurrentCultureIgnoreCase) ||
+                    originalFileName.EndsWith(".png", StringComparison.CurrentCultureIgnoreCase) ||
+                    originalFileName.EndsWith(".jpeg", StringComparison.CurrentCultureIgnoreCase);
+                    
+                    String subPath = "";
+                    JToken storeNode = Bee.Engine.Hive["store"];
+                    if (storeNode != null)
+                    {
+                        JToken uploadParam = storeNode[key];
+                        if (uploadParam != null)
+                        {
+                            JToken pathToken = uploadParam["path"];
+                            if(pathToken != null){
+                                String  pt = (String)pathToken;
+                                filesPath += pt + "/";
+                                //check if directory exists
+                                if(!Directory.Exists(filesPath)){
+                                    Directory.CreateDirectory(filesPath);
+                                }
+                            }
+                            if (isImage)
+                            {
+                                //save
+                                JToken resizeToken = uploadParam["resize"];
+                                if (resizeToken != null)
+                                {
+                                    foreach (var resize in (JObject)resizeToken)
+                                    {
+                                        string resizeName = resize.Key;
+                                        Double[] wh = ((String)resize.Value).Split('x').Select<String, Double>(x => Convert.ToDouble(x)).ToArray<Double>();
+                                        string sizePath = filesPath + resizeName + "/";
+                                        //check if directory exists
+                                        if (!Directory.Exists(sizePath))
+                                        {
+                                            Directory.CreateDirectory(sizePath);
+                                        }
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                isImage
+                            }
+                        }
+                    }

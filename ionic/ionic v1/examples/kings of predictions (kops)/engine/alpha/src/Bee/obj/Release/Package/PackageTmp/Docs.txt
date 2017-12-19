@@ -1,0 +1,44 @@
+﻿_errors
+	The errors scent can only be smelt at the root of the nector and therefore has no effect
+in the reset of the nector
+	It must be an array, if you have provided any nodeValue that is not an empty array, well it doesnot
+acctuall matter because all that is needed is that this scent appears at the root of your nector
+
+
+combs
+	combs can be defined using singulars and plurals
+bee supports a mixture of these but its highly recommended that one stocks to one style
+in the hive definition
+	One can define a comb as Categories and yet in the nector this can be referred to as Category
+	Comb names use this culture "en-US"
+
+
+HoneyTypes
+pk     =>[int] IDENTITY(1,1) NOT NULL
+int	   =>[int] NOT NULL
+dbl    =>[float] NOT NULL
+str    =>[nvarchar](max) NOT NULL
+dte    =>[datetime] NOT NULL
+enm    =>[int] NOT NULL
+bol    =>[bit] NOT NULL
+fk     =>[int] NOT NULL
+inv_ an invisible cell, its put before a honey type to make it invisible
+[DataType]_   => an underscore after a honey type makes it nullable e.g int_ => [int] NULL
+
+
+//immediate attribute values dont apply in select or get scenarios because
+//this is a select and it doesnt make scence for a cell to have a value
+//which is not from the hive instead we use things like dynamic cells e.g +Token 
+
+infuture please include an ability lkie this one _whfjfjfj: 45, 
+                                                 _whfjfjfj: "343"
+
+is it necessary to refer to parent nodes above like _$$$, because it tkink that since
+the where cluse is one sentence then every object can just refer to its selft via _$
+
+
+
+
+
+
+												

@@ -1,0 +1,168 @@
+﻿{
+	"location":"Data Source=DESKTOP-CT0EIC2\\CLOUDSERVER;Initial Catalog=B4US5DEMO;Persist Security Info=False;User ID=sa;Password=cloudco;Connect Timeout=300",
+	"mood":"dev",
+	"combs" : {
+		"User": "pkUserId strAvatar strName strEmail strPhoneNumber inv_strUserName inv_strPassword inv_strStatus inv_strCode inv_dteCodeDate inv_dteCodeExpiryDate",
+		"Category": "pkCategoryId strName strDescription intUserId",
+		"Type" : "pkTypeId strName strDescription intUserId",
+		"Item": "pkItemId strName strImage strSize strColor intCategoryId intTypeId intUserId",
+		"MustBuy": "pkMustBuyId fkItemId dblPrice dteEntryDate bolWasBought dblBoughtPrice dte_BoughtOn strDetails intUserId"
+	},
+	"seeds":{
+		"Users" :[{
+			"Avatar":"myavatar.png",
+			"Name":"Nyola Mike",  
+			"Email":"nyolamike@live.com",
+			"PhoneNumber":"0703158861",
+			"UserName":"nyolamike",
+			"_aPassword": "encrypt _qwertyb33 _@h_security_secretPotion",
+			"Status" : "ok",
+			"Code":"0000",
+			"_aCodeDate":"_@d_now",
+			"_aCodeExpiryDate":"_@d_now_add_4m",
+			"_r": "myId" 
+		}],
+		"Roles":[{
+			"Name":"System Admin",
+			"Description":"The System Administrator",
+			"_r": "adminId"
+		},{
+			"Name":"Spender",
+			"Description":"The people who spend",
+			"_r": "spenderRoleId"
+		}],
+		"Access":[{
+			"CombName" : "*",
+			"CanDo" : -1,
+			"_o": {
+				"RoleId" : "adminId",
+			}
+		},{
+			"CombName" : "Category",
+			"CanDo" : 2,
+			"_o": {
+				"RoleId" : "spenderRoleId"
+			}
+		},{
+			"CombName" : "Type",
+			"CanDo" : 2,
+			"_o": {
+				"RoleId" : "spenderRoleId"
+			}
+		}],
+		"UserInRoles": [{
+			"_o": {
+				"UserId" : "myId",
+				"RoleId" : "adminId"
+			}
+		}],
+		"Categories" : [{
+			"Name" : "General",
+			"Description" : "Default General Category",
+			"_o": {
+				"UserId" : "myId"
+			}
+		}],
+		"Types" : [{
+			"Name" : "General",
+			"Description" : "Default General Type",
+			"_o": {
+				"UserId" : "myId"
+			}
+		}]
+	},
+	"flowers":{
+
+	},
+	"security" : {
+		"userComb" : "User",
+		"passwordCell": "Password",
+		"usernameCell": "UserName",
+		"secretPotion" : "myDroneSecurityKey",
+		"isRegistrationOpen" : true,
+		"defaultRole":1,
+		"emailCell" : "Email",
+		"phoneNumberCell" : "PhoneNumber",
+		"statusCell" : "Status",
+		"codeCell" : "Code",
+		"codeDateCell" : "CodeDate",
+		"codeExpiryCell" : "CodeExpiryDate",
+		"verify":{
+			"method":"sms&email",
+			"code" : "vcode",
+			"emailTemplate": "testVeriEmail.html",
+			"smsTemplate": "testVeriSms.html",
+			"subject":"B4US ACCOUNT VERIFICATION CODE",
+			"expiry": "30m"
+		},
+		"recover" : {
+			"method" : "sms&email",
+			"code" : "rcode",
+			"emailTemplate": "testRecEmail.html",
+			"subject":"B4US ACCOUNT RECOVERY DETAILS",
+			"smsTemplate": "testRecSms.html",
+			"expiry": "30m"
+		}
+	},
+	"code":{
+		"vcode":{
+			"length" : 4,
+			"case": "upper&lower",
+			"useNumerics" : false,
+			"useSpecials" : false,
+		},
+		"rcode":{
+			"length" : 5,
+			"case": "upper&lower",
+			"useNumerics" : false,
+			"useSpecials" : false,
+		}
+	},
+	"sms":{
+		"provider":"magezi",
+		"name":"Quiso Play Grounds",
+		"app" : "webapi",
+		"password":"129i73a",
+		"user":"quisoplay"
+	},
+	"email":{
+		"provider":"mailjet",
+		"sender":"quisoplay@gmail.com",
+		"name":"Quiso Play Grounds",
+		"publickey":"4a75690468200c81130b9d52ceb38a8d",
+		"privatekey":"ecd8ba20e0d0565544a52414f9aad70b"
+	},
+	"ussd":{
+	},
+	"notification":{
+	},
+	"mobilemoney":{
+		"provider" : "pesapal",
+
+	},
+	"triggers":{
+
+	},
+	"schedules":{
+
+	},
+	"store":{
+		"Avatar":{
+			"path":"avatars",
+			"resize":{
+				"mobile":"30x30",
+				"web":"50x50",
+				"pad":"40x35"
+			}
+		},
+		"Image":{
+			"path":"itemImages",
+			"resize":{
+				"tiny":"40x40",
+				"mobile":"100x100",
+				"web":"150x150",
+				"pad":"120x100"
+			}
+		}
+	}
+}

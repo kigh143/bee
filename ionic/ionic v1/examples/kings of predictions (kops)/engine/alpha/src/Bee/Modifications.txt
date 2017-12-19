@@ -1,0 +1,37 @@
+﻿10/29/2017
+patch
+fixing issue with _a:"+CPrice" , to work according to the current path
+Added a parameter to Bee.Workers.PrepareCells to take in the nme of the current node so that we can get the path right
+and several modifications in different places
+
+Added
+Added Group By support
+Added _d@_now_year which translates to now.year
+Added zee for zipping purposes
+
+
+10/28/2017
+pacth
+fixed an issue with _a:"* +something"
+it was interpreting the statmen the right, as in it was not seeing that 
+you have requested for everything e.g
+else if (attributeFilter.Contains(Bee.Scents.Everything) && attributeFilter.Contains(Bee.Scents.Plus))
+{
+    attr = attr + " " + cell.Name;
+}
+this is done after we have determined that this cell.Name is not supposed to be removed, the detemination
+is done by the if conditions above this one
+
+Added
+added a new engine jelly function called comma
+takes up a number to be formated using commas 
+_jstrPriceX:"comma Price"  ===> _jstrPriceX : "67,000"
+
+pacth
+Hive.GetAttributes
+modified logic to scan for -ACellName
+e.g
+(attributeFilter.Contains(Bee.Scents.Minus + cell.Name + " ") || attributeFilter.EndsWith(Bee.Scents.Minus + cell.Name)
+logic like this deals with cases like "-CakePot CakeX -Cake"
+if the cell.Name = "Cake", without the + " " 
+it would math -CakePot which is not the intended behviour

@@ -1,0 +1,26 @@
+﻿{
+	"dispatch":[{
+		"a" : "DispatchId SalesAgentId Date CashAmount DispatchState",
+		"SalesAgent" : {
+			"a" : "SalesAgentId FirstName lastName Gender PhoneNumber"		
+		},
+		"DispatchProduct":[{
+			"a" : "DispatchProductId ProductId Quantity Date UnitPrice DispatchId UnitOfMeasureId AgentReturnAmount ",
+			"Product" : {
+				"a" : "ProductId Name ProductTypeId ProductCategoryId UnitOfMeasureId Description DefaultUnitPrice",
+				"ProductType" : {
+					"a" : "ProductTypeId Name Description"
+				},
+				"ProductCategory" : {
+					"a" : "ProductCategoryId Name Description"
+				},
+				"UnitOfMeasure" : {
+					"a" : "UnitOfMeasureId Name Symbol"
+				}
+			},
+			"UnitOfMeasure" : {
+				"a" : "UnitOfMeasureId Name Symbol"
+			}
+		}]
+	}]
+}

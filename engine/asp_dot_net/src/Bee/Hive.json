@@ -1,0 +1,137 @@
+﻿{
+	"location":"Data Source=DESKTOP-CT0EIC2\\CLOUDSERVER;Initial Catalog=MAMACARE;Persist Security Info=False;User ID=sa;Password=cloudco;Connect Timeout=300",
+	"mood":"dev",
+	"combs" : {
+		"Facility" : "pkFacilityId strName str_Description",
+		"User": "pkUserId fkFacilityId strAvatar strName strAddress inv_strUserName inv_strPassword str_Email str_PhoneNumber inv_strCode inv_dteCodeDate inv_dteCodeExpiryDate inv_strStatus",
+		"Woman": "pkWomanId fkUserId strFirstName strLastName strAddress strAvatar strPhone dteDob strStatus dblHeight dte_ExpDateOfDelivery dte_DeliveryDate bolWasNormalDelivery ",
+		"FollowUp" : "pkFollowUpId fkWomanId dblWeight dteLastFacilityVisit strFacilityName bolWasVaccinated strVaccination dteDateOfVaccination dte_DateOfFollowUp",
+		"BabyFollowUp": "pkBabyFollowUpId fkWomanId dblWeight strHealthStatus bolWasVaccinated strVaccination dte_DateOfFollowUp dte_DateOfVaccination dte_FacilityName",
+		"NewsFeed": "pkNewsFeedId fkUserId dteDateCreated strTitle strDetails str_Image",
+		"Comment": "pkCommentId fkUserId fkNewsFeedId dteDateCreated strDetails"
+	},
+	"seeds":{
+		"Facilities" : [{
+			"Name": "Mulago",
+			"Description": "Mulago Hospital",
+			"_r":"facilityId"
+		}],
+		"Users" :[{
+			"Avatar":"myavatar.png",
+			"_o":{
+				"FacilityId" : "facilityId"
+			},
+			"Name":"Nyola Mike",  
+			"Address":"Nankulabye",
+			"UserName":"nyolamike",
+			"_aPassword": "encrypt _qwertyb33 _@h_security_secretPotion",
+			"Email":"nyolamike@live.com",
+			"PhoneNumber":"0703158861",
+			"Code":"0000",
+			"_aCodeDate":"_@d_now",
+			"_aCodeExpiryDate":"_@d_now_add_4m",
+			"Status" : "ok",
+			"_r": "userId"
+		}],
+		"Roles":[{
+			"Name":"System Admin",
+			"Description":"The System Administrator",
+			"_r": "adminId"
+		},{
+			"Name":"Agent",
+			"Description":"The community health agent",
+			"_r": "agentRoleId"
+		}],
+		"Access":[{
+			"CombName" : "*",
+			"CanDo" : -1,
+			"_o": {
+				"RoleId" : "adminId",
+			}
+		},{
+			"CombName" : "*",
+			"CanDo" : -1,
+			"_o": {
+				"RoleId" : "agentRoleId",
+			}
+		}],
+		"UserInRoles": [{
+			"_o": {
+				"UserId" : "userId",
+				"RoleId" : "adminId"
+			}
+		}],
+	},
+	"flowers":{
+
+	},
+	"security" : {
+		"userComb" : "User",
+		"passwordCell": "Password",
+		"usernameCell": "UserName",
+		"secretPotion" : "mamacaresecuritykey",
+		"isRegistrationOpen" : true,
+		"defaultRole":2,
+		"emailCell" : "Email",
+		"phoneNumberCell" : "PhoneNumber",
+		"statusCell" : "Status",
+		"codeCell" : "Code",
+		"codeDateCell" : "CodeDate",
+		"codeExpiryCell" : "CodeExpiryDate",
+		"recover" : {
+			"method" : "sms&email",
+			"code" : "rcode",
+			"emailTemplate": "testRecEmail.html",
+			"subject":"B4US ACCOUNT RECOVERY DETAILS",
+			"smsTemplate": "testRecSms.html",
+			"expiry": "30m"
+		},
+		"exclude" :{
+			"Facility" : "2"
+		}
+	},
+	"code":{
+		"rcode":{
+			"length" : 5,
+			"case": "upper&lower",
+			"useNumerics" : false,
+			"useSpecials" : false,
+		}
+	},
+	"sms":{
+		"provider":"magezi",
+		"name":"Quiso Play Grounds",
+		"app" : "webapi",
+		"password":"129i73a",
+		"user":"quisoplay"
+	},
+	"email":{
+		"provider":"mailjet",
+		"sender":"quisoplay@gmail.com",
+		"name":"Quiso Play Grounds",
+		"publickey":"4a75690468200c81130b9d52ceb38a8d",
+		"privatekey":"ecd8ba20e0d0565544a52414f9aad70b"
+	},
+	"store":{
+		"Avatar":{
+			"path":"avatars",
+			"resize":{
+				"mobile":"30x30",
+				"web":"50x50",
+				"pad":"40x35"
+			},
+			"defaults":{
+				"Woman" : "defaultavatar.png"
+			}
+		},
+		"Image":{
+			"path":"NewsFeedImages",
+			"resize":{
+				"admin":"12x40",
+				"mobile":"100x100",
+				"web":"150x150",
+				"pad":"120x100"
+			}
+		}
+	}
+}

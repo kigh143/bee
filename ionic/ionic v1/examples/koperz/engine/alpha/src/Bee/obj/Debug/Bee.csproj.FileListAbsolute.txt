@@ -1,0 +1,179 @@
+G:\bando stop heavens\bee\dev\Bee v0.5.0\Bee\Bee\obj\Debug\Bee.csprojResolveAssemblyReference.cache
+G:\bando stop heavens\bee\dev\Bee v0.5.0\Bee\Bee\bin\Bee.dll
+G:\bando stop heavens\bee\dev\Bee v0.5.0\Bee\Bee\bin\Bee.pdb
+G:\bando stop heavens\bee\dev\Bee v0.5.0\Bee\Bee\bin\ImageProcessor.dll
+G:\bando stop heavens\bee\dev\Bee v0.5.0\Bee\Bee\bin\ImageProcessor.Web.dll
+G:\bando stop heavens\bee\dev\Bee v0.5.0\Bee\Bee\bin\Mailjet.Client.dll
+G:\bando stop heavens\bee\dev\Bee v0.5.0\Bee\Bee\bin\Microsoft.IO.RecyclableMemoryStream.dll
+G:\bando stop heavens\bee\dev\Bee v0.5.0\Bee\Bee\bin\Newtonsoft.Json.dll
+G:\bando stop heavens\bee\dev\Bee v0.5.0\Bee\Bee\bin\RazorEngine.dll
+G:\bando stop heavens\bee\dev\Bee v0.5.0\Bee\Bee\bin\System.Net.Http.Formatting.dll
+G:\bando stop heavens\bee\dev\Bee v0.5.0\Bee\Bee\bin\System.Web.Cors.dll
+G:\bando stop heavens\bee\dev\Bee v0.5.0\Bee\Bee\bin\System.Web.Http.Cors.dll
+G:\bando stop heavens\bee\dev\Bee v0.5.0\Bee\Bee\bin\System.Web.Http.dll
+G:\bando stop heavens\bee\dev\Bee v0.5.0\Bee\Bee\bin\System.Web.Http.WebHost.dll
+G:\bando stop heavens\bee\dev\Bee v0.5.0\Bee\Bee\bin\System.Web.Razor.dll
+G:\bando stop heavens\bee\dev\Bee v0.5.0\Bee\Bee\bin\ImageProcessor.xml
+G:\bando stop heavens\bee\dev\Bee v0.5.0\Bee\Bee\bin\ImageProcessor.Web.xml
+G:\bando stop heavens\bee\dev\Bee v0.5.0\Bee\Bee\bin\Microsoft.IO.RecyclableMemoryStream.pdb
+G:\bando stop heavens\bee\dev\Bee v0.5.0\Bee\Bee\bin\Newtonsoft.Json.xml
+G:\bando stop heavens\bee\dev\Bee v0.5.0\Bee\Bee\bin\RazorEngine.xml
+G:\bando stop heavens\bee\dev\Bee v0.5.0\Bee\Bee\bin\System.Net.Http.Formatting.xml
+G:\bando stop heavens\bee\dev\Bee v0.5.0\Bee\Bee\bin\System.Web.Http.xml
+G:\bando stop heavens\bee\dev\Bee v0.5.0\Bee\Bee\bin\System.Web.Http.Cors.xml
+G:\bando stop heavens\bee\dev\Bee v0.5.0\Bee\Bee\bin\System.Web.Razor.xml
+G:\bando stop heavens\bee\dev\Bee v0.5.0\Bee\Bee\bin\System.Web.Http.WebHost.xml
+G:\bando stop heavens\bee\dev\Bee v0.5.0\Bee\Bee\obj\Debug\Bee.dll
+G:\bando stop heavens\bee\dev\Bee v0.5.0\Bee\Bee\obj\Debug\Bee.pdb
+G:\bando stop heavens\bee\dev\Bee v0.5.0\Bee\Bee\bin\DotLiquid.dll
+G:\bando stop heavens\bee\dev\Bee v0.5.0\Bee\Bee\bin\DotLiquid.xml
+G:\bando stop heavens\bee\dev\Bee v0.5.0\Bee\Bee\bin\it\DotLiquid.resources.dll
+G:\bando stop heavens\bee\dev\Bee v0.5.0\BeeDemo\Bee\bin\Bee.dll
+G:\bando stop heavens\bee\dev\Bee v0.5.0\BeeDemo\Bee\bin\Bee.pdb
+G:\bando stop heavens\bee\dev\Bee v0.5.0\BeeDemo\Bee\bin\DotLiquid.dll
+G:\bando stop heavens\bee\dev\Bee v0.5.0\BeeDemo\Bee\bin\ImageProcessor.dll
+G:\bando stop heavens\bee\dev\Bee v0.5.0\BeeDemo\Bee\bin\ImageProcessor.Web.dll
+G:\bando stop heavens\bee\dev\Bee v0.5.0\BeeDemo\Bee\bin\Mailjet.Client.dll
+G:\bando stop heavens\bee\dev\Bee v0.5.0\BeeDemo\Bee\bin\Microsoft.IO.RecyclableMemoryStream.dll
+G:\bando stop heavens\bee\dev\Bee v0.5.0\BeeDemo\Bee\bin\Newtonsoft.Json.dll
+G:\bando stop heavens\bee\dev\Bee v0.5.0\BeeDemo\Bee\bin\RazorEngine.dll
+G:\bando stop heavens\bee\dev\Bee v0.5.0\BeeDemo\Bee\bin\System.Net.Http.Formatting.dll
+G:\bando stop heavens\bee\dev\Bee v0.5.0\BeeDemo\Bee\bin\System.Web.Cors.dll
+G:\bando stop heavens\bee\dev\Bee v0.5.0\BeeDemo\Bee\bin\System.Web.Http.Cors.dll
+G:\bando stop heavens\bee\dev\Bee v0.5.0\BeeDemo\Bee\bin\System.Web.Http.dll
+G:\bando stop heavens\bee\dev\Bee v0.5.0\BeeDemo\Bee\bin\System.Web.Http.WebHost.dll
+G:\bando stop heavens\bee\dev\Bee v0.5.0\BeeDemo\Bee\bin\System.Web.Razor.dll
+G:\bando stop heavens\bee\dev\Bee v0.5.0\BeeDemo\Bee\bin\DotLiquid.xml
+G:\bando stop heavens\bee\dev\Bee v0.5.0\BeeDemo\Bee\bin\ImageProcessor.xml
+G:\bando stop heavens\bee\dev\Bee v0.5.0\BeeDemo\Bee\bin\ImageProcessor.Web.xml
+G:\bando stop heavens\bee\dev\Bee v0.5.0\BeeDemo\Bee\bin\Microsoft.IO.RecyclableMemoryStream.pdb
+G:\bando stop heavens\bee\dev\Bee v0.5.0\BeeDemo\Bee\bin\Newtonsoft.Json.xml
+G:\bando stop heavens\bee\dev\Bee v0.5.0\BeeDemo\Bee\bin\RazorEngine.xml
+G:\bando stop heavens\bee\dev\Bee v0.5.0\BeeDemo\Bee\bin\System.Net.Http.Formatting.xml
+G:\bando stop heavens\bee\dev\Bee v0.5.0\BeeDemo\Bee\bin\System.Web.Http.xml
+G:\bando stop heavens\bee\dev\Bee v0.5.0\BeeDemo\Bee\bin\System.Web.Http.Cors.xml
+G:\bando stop heavens\bee\dev\Bee v0.5.0\BeeDemo\Bee\bin\System.Web.Razor.xml
+G:\bando stop heavens\bee\dev\Bee v0.5.0\BeeDemo\Bee\bin\System.Web.Http.WebHost.xml
+G:\bando stop heavens\bee\dev\Bee v0.5.0\BeeDemo\Bee\bin\it\DotLiquid.resources.dll
+G:\bando stop heavens\bee\dev\Bee v0.5.0\BeeDemo\Bee\obj\Debug\Bee.dll
+G:\bando stop heavens\bee\dev\Bee v0.5.0\BeeDemo\Bee\obj\Debug\Bee.pdb
+G:\bando stop heavens\bee\dev\BeeDemo\Bee\bin\Bee.dll
+G:\bando stop heavens\bee\dev\BeeDemo\Bee\bin\Bee.pdb
+G:\bando stop heavens\bee\dev\BeeDemo\Bee\bin\DotLiquid.dll
+G:\bando stop heavens\bee\dev\BeeDemo\Bee\bin\ImageProcessor.dll
+G:\bando stop heavens\bee\dev\BeeDemo\Bee\bin\ImageProcessor.Web.dll
+G:\bando stop heavens\bee\dev\BeeDemo\Bee\bin\Mailjet.Client.dll
+G:\bando stop heavens\bee\dev\BeeDemo\Bee\bin\Microsoft.IO.RecyclableMemoryStream.dll
+G:\bando stop heavens\bee\dev\BeeDemo\Bee\bin\Newtonsoft.Json.dll
+G:\bando stop heavens\bee\dev\BeeDemo\Bee\bin\RazorEngine.dll
+G:\bando stop heavens\bee\dev\BeeDemo\Bee\bin\System.Net.Http.Formatting.dll
+G:\bando stop heavens\bee\dev\BeeDemo\Bee\bin\System.Web.Cors.dll
+G:\bando stop heavens\bee\dev\BeeDemo\Bee\bin\System.Web.Http.Cors.dll
+G:\bando stop heavens\bee\dev\BeeDemo\Bee\bin\System.Web.Http.dll
+G:\bando stop heavens\bee\dev\BeeDemo\Bee\bin\System.Web.Http.WebHost.dll
+G:\bando stop heavens\bee\dev\BeeDemo\Bee\bin\System.Web.Razor.dll
+G:\bando stop heavens\bee\dev\BeeDemo\Bee\bin\DotLiquid.xml
+G:\bando stop heavens\bee\dev\BeeDemo\Bee\bin\ImageProcessor.xml
+G:\bando stop heavens\bee\dev\BeeDemo\Bee\bin\ImageProcessor.Web.xml
+G:\bando stop heavens\bee\dev\BeeDemo\Bee\bin\Microsoft.IO.RecyclableMemoryStream.pdb
+G:\bando stop heavens\bee\dev\BeeDemo\Bee\bin\Newtonsoft.Json.xml
+G:\bando stop heavens\bee\dev\BeeDemo\Bee\bin\RazorEngine.xml
+G:\bando stop heavens\bee\dev\BeeDemo\Bee\bin\System.Net.Http.Formatting.xml
+G:\bando stop heavens\bee\dev\BeeDemo\Bee\bin\System.Web.Http.xml
+G:\bando stop heavens\bee\dev\BeeDemo\Bee\bin\System.Web.Http.Cors.xml
+G:\bando stop heavens\bee\dev\BeeDemo\Bee\bin\System.Web.Razor.xml
+G:\bando stop heavens\bee\dev\BeeDemo\Bee\bin\System.Web.Http.WebHost.xml
+G:\bando stop heavens\bee\dev\BeeDemo\Bee\bin\it\DotLiquid.resources.dll
+G:\bando stop heavens\bee\dev\BeeDemo\Bee\obj\Debug\Bee.csprojResolveAssemblyReference.cache
+G:\bando stop heavens\bee\dev\BeeDemo\Bee\obj\Debug\Bee.dll
+G:\bando stop heavens\bee\dev\BeeDemo\Bee\obj\Debug\Bee.pdb
+G:\bando stop heavens\mama care\app\backend\BeeDemo\Bee\bin\Bee.dll
+G:\bando stop heavens\mama care\app\backend\BeeDemo\Bee\bin\Bee.pdb
+G:\bando stop heavens\mama care\app\backend\BeeDemo\Bee\bin\DotLiquid.dll
+G:\bando stop heavens\mama care\app\backend\BeeDemo\Bee\bin\ImageProcessor.dll
+G:\bando stop heavens\mama care\app\backend\BeeDemo\Bee\bin\ImageProcessor.Web.dll
+G:\bando stop heavens\mama care\app\backend\BeeDemo\Bee\bin\Mailjet.Client.dll
+G:\bando stop heavens\mama care\app\backend\BeeDemo\Bee\bin\Microsoft.IO.RecyclableMemoryStream.dll
+G:\bando stop heavens\mama care\app\backend\BeeDemo\Bee\bin\Newtonsoft.Json.dll
+G:\bando stop heavens\mama care\app\backend\BeeDemo\Bee\bin\RazorEngine.dll
+G:\bando stop heavens\mama care\app\backend\BeeDemo\Bee\bin\System.Net.Http.Formatting.dll
+G:\bando stop heavens\mama care\app\backend\BeeDemo\Bee\bin\System.Web.Cors.dll
+G:\bando stop heavens\mama care\app\backend\BeeDemo\Bee\bin\System.Web.Http.Cors.dll
+G:\bando stop heavens\mama care\app\backend\BeeDemo\Bee\bin\System.Web.Http.dll
+G:\bando stop heavens\mama care\app\backend\BeeDemo\Bee\bin\System.Web.Http.WebHost.dll
+G:\bando stop heavens\mama care\app\backend\BeeDemo\Bee\bin\System.Web.Razor.dll
+G:\bando stop heavens\mama care\app\backend\BeeDemo\Bee\bin\DotLiquid.xml
+G:\bando stop heavens\mama care\app\backend\BeeDemo\Bee\bin\ImageProcessor.xml
+G:\bando stop heavens\mama care\app\backend\BeeDemo\Bee\bin\ImageProcessor.Web.xml
+G:\bando stop heavens\mama care\app\backend\BeeDemo\Bee\bin\Microsoft.IO.RecyclableMemoryStream.pdb
+G:\bando stop heavens\mama care\app\backend\BeeDemo\Bee\bin\Newtonsoft.Json.xml
+G:\bando stop heavens\mama care\app\backend\BeeDemo\Bee\bin\RazorEngine.xml
+G:\bando stop heavens\mama care\app\backend\BeeDemo\Bee\bin\System.Net.Http.Formatting.xml
+G:\bando stop heavens\mama care\app\backend\BeeDemo\Bee\bin\System.Web.Http.xml
+G:\bando stop heavens\mama care\app\backend\BeeDemo\Bee\bin\System.Web.Http.Cors.xml
+G:\bando stop heavens\mama care\app\backend\BeeDemo\Bee\bin\System.Web.Razor.xml
+G:\bando stop heavens\mama care\app\backend\BeeDemo\Bee\bin\System.Web.Http.WebHost.xml
+G:\bando stop heavens\mama care\app\backend\BeeDemo\Bee\bin\it\DotLiquid.resources.dll
+G:\bando stop heavens\mama care\app\backend\BeeDemo\Bee\obj\Debug\Bee.dll
+G:\bando stop heavens\mama care\app\backend\BeeDemo\Bee\obj\Debug\Bee.pdb
+G:\bando stop heavens\mama care\app\backend\BeeDemo\Bee\obj\Debug\Bee.csprojResolveAssemblyReference.cache
+G:\diyl\thing\bee\ionic\ionic v1\examples\kings of predictions (kops)\engine\alpha\src\Bee\bin\Bee.dll
+G:\diyl\thing\bee\ionic\ionic v1\examples\kings of predictions (kops)\engine\alpha\src\Bee\bin\Bee.pdb
+G:\diyl\thing\bee\ionic\ionic v1\examples\kings of predictions (kops)\engine\alpha\src\Bee\bin\DotLiquid.dll
+G:\diyl\thing\bee\ionic\ionic v1\examples\kings of predictions (kops)\engine\alpha\src\Bee\bin\ImageProcessor.dll
+G:\diyl\thing\bee\ionic\ionic v1\examples\kings of predictions (kops)\engine\alpha\src\Bee\bin\ImageProcessor.Web.dll
+G:\diyl\thing\bee\ionic\ionic v1\examples\kings of predictions (kops)\engine\alpha\src\Bee\bin\Mailjet.Client.dll
+G:\diyl\thing\bee\ionic\ionic v1\examples\kings of predictions (kops)\engine\alpha\src\Bee\bin\Microsoft.IO.RecyclableMemoryStream.dll
+G:\diyl\thing\bee\ionic\ionic v1\examples\kings of predictions (kops)\engine\alpha\src\Bee\bin\Newtonsoft.Json.dll
+G:\diyl\thing\bee\ionic\ionic v1\examples\kings of predictions (kops)\engine\alpha\src\Bee\bin\RazorEngine.dll
+G:\diyl\thing\bee\ionic\ionic v1\examples\kings of predictions (kops)\engine\alpha\src\Bee\bin\System.Net.Http.Formatting.dll
+G:\diyl\thing\bee\ionic\ionic v1\examples\kings of predictions (kops)\engine\alpha\src\Bee\bin\System.Web.Cors.dll
+G:\diyl\thing\bee\ionic\ionic v1\examples\kings of predictions (kops)\engine\alpha\src\Bee\bin\System.Web.Http.Cors.dll
+G:\diyl\thing\bee\ionic\ionic v1\examples\kings of predictions (kops)\engine\alpha\src\Bee\bin\System.Web.Http.dll
+G:\diyl\thing\bee\ionic\ionic v1\examples\kings of predictions (kops)\engine\alpha\src\Bee\bin\System.Web.Http.WebHost.dll
+G:\diyl\thing\bee\ionic\ionic v1\examples\kings of predictions (kops)\engine\alpha\src\Bee\bin\System.Web.Razor.dll
+G:\diyl\thing\bee\ionic\ionic v1\examples\kings of predictions (kops)\engine\alpha\src\Bee\bin\DotLiquid.xml
+G:\diyl\thing\bee\ionic\ionic v1\examples\kings of predictions (kops)\engine\alpha\src\Bee\bin\ImageProcessor.xml
+G:\diyl\thing\bee\ionic\ionic v1\examples\kings of predictions (kops)\engine\alpha\src\Bee\bin\ImageProcessor.Web.xml
+G:\diyl\thing\bee\ionic\ionic v1\examples\kings of predictions (kops)\engine\alpha\src\Bee\bin\Microsoft.IO.RecyclableMemoryStream.pdb
+G:\diyl\thing\bee\ionic\ionic v1\examples\kings of predictions (kops)\engine\alpha\src\Bee\bin\Newtonsoft.Json.xml
+G:\diyl\thing\bee\ionic\ionic v1\examples\kings of predictions (kops)\engine\alpha\src\Bee\bin\RazorEngine.xml
+G:\diyl\thing\bee\ionic\ionic v1\examples\kings of predictions (kops)\engine\alpha\src\Bee\bin\System.Net.Http.Formatting.xml
+G:\diyl\thing\bee\ionic\ionic v1\examples\kings of predictions (kops)\engine\alpha\src\Bee\bin\System.Web.Http.xml
+G:\diyl\thing\bee\ionic\ionic v1\examples\kings of predictions (kops)\engine\alpha\src\Bee\bin\System.Web.Http.Cors.xml
+G:\diyl\thing\bee\ionic\ionic v1\examples\kings of predictions (kops)\engine\alpha\src\Bee\bin\System.Web.Razor.xml
+G:\diyl\thing\bee\ionic\ionic v1\examples\kings of predictions (kops)\engine\alpha\src\Bee\bin\System.Web.Http.WebHost.xml
+G:\diyl\thing\bee\ionic\ionic v1\examples\kings of predictions (kops)\engine\alpha\src\Bee\bin\it\DotLiquid.resources.dll
+G:\diyl\thing\bee\ionic\ionic v1\examples\kings of predictions (kops)\engine\alpha\src\Bee\obj\Debug\Bee.csprojResolveAssemblyReference.cache
+G:\diyl\thing\bee\ionic\ionic v1\examples\kings of predictions (kops)\engine\alpha\src\Bee\obj\Debug\Bee.dll
+G:\diyl\thing\bee\ionic\ionic v1\examples\kings of predictions (kops)\engine\alpha\src\Bee\obj\Debug\Bee.pdb
+G:\diyl\thing\bee\ionic\ionic v1\examples\koperz\engine\alpha\src\Bee\bin\Bee.dll
+G:\diyl\thing\bee\ionic\ionic v1\examples\koperz\engine\alpha\src\Bee\bin\Bee.pdb
+G:\diyl\thing\bee\ionic\ionic v1\examples\koperz\engine\alpha\src\Bee\bin\DotLiquid.dll
+G:\diyl\thing\bee\ionic\ionic v1\examples\koperz\engine\alpha\src\Bee\bin\ImageProcessor.dll
+G:\diyl\thing\bee\ionic\ionic v1\examples\koperz\engine\alpha\src\Bee\bin\ImageProcessor.Web.dll
+G:\diyl\thing\bee\ionic\ionic v1\examples\koperz\engine\alpha\src\Bee\bin\Mailjet.Client.dll
+G:\diyl\thing\bee\ionic\ionic v1\examples\koperz\engine\alpha\src\Bee\bin\Microsoft.IO.RecyclableMemoryStream.dll
+G:\diyl\thing\bee\ionic\ionic v1\examples\koperz\engine\alpha\src\Bee\bin\Newtonsoft.Json.dll
+G:\diyl\thing\bee\ionic\ionic v1\examples\koperz\engine\alpha\src\Bee\bin\RazorEngine.dll
+G:\diyl\thing\bee\ionic\ionic v1\examples\koperz\engine\alpha\src\Bee\bin\System.Net.Http.Formatting.dll
+G:\diyl\thing\bee\ionic\ionic v1\examples\koperz\engine\alpha\src\Bee\bin\System.Web.Cors.dll
+G:\diyl\thing\bee\ionic\ionic v1\examples\koperz\engine\alpha\src\Bee\bin\System.Web.Http.Cors.dll
+G:\diyl\thing\bee\ionic\ionic v1\examples\koperz\engine\alpha\src\Bee\bin\System.Web.Http.dll
+G:\diyl\thing\bee\ionic\ionic v1\examples\koperz\engine\alpha\src\Bee\bin\System.Web.Http.WebHost.dll
+G:\diyl\thing\bee\ionic\ionic v1\examples\koperz\engine\alpha\src\Bee\bin\System.Web.Razor.dll
+G:\diyl\thing\bee\ionic\ionic v1\examples\koperz\engine\alpha\src\Bee\bin\DotLiquid.xml
+G:\diyl\thing\bee\ionic\ionic v1\examples\koperz\engine\alpha\src\Bee\bin\ImageProcessor.xml
+G:\diyl\thing\bee\ionic\ionic v1\examples\koperz\engine\alpha\src\Bee\bin\ImageProcessor.Web.xml
+G:\diyl\thing\bee\ionic\ionic v1\examples\koperz\engine\alpha\src\Bee\bin\Microsoft.IO.RecyclableMemoryStream.pdb
+G:\diyl\thing\bee\ionic\ionic v1\examples\koperz\engine\alpha\src\Bee\bin\Newtonsoft.Json.xml
+G:\diyl\thing\bee\ionic\ionic v1\examples\koperz\engine\alpha\src\Bee\bin\RazorEngine.xml
+G:\diyl\thing\bee\ionic\ionic v1\examples\koperz\engine\alpha\src\Bee\bin\System.Net.Http.Formatting.xml
+G:\diyl\thing\bee\ionic\ionic v1\examples\koperz\engine\alpha\src\Bee\bin\System.Web.Http.xml
+G:\diyl\thing\bee\ionic\ionic v1\examples\koperz\engine\alpha\src\Bee\bin\System.Web.Http.Cors.xml
+G:\diyl\thing\bee\ionic\ionic v1\examples\koperz\engine\alpha\src\Bee\bin\System.Web.Razor.xml
+G:\diyl\thing\bee\ionic\ionic v1\examples\koperz\engine\alpha\src\Bee\bin\System.Web.Http.WebHost.xml
+G:\diyl\thing\bee\ionic\ionic v1\examples\koperz\engine\alpha\src\Bee\bin\it\DotLiquid.resources.dll
+G:\diyl\thing\bee\ionic\ionic v1\examples\koperz\engine\alpha\src\Bee\obj\Debug\Bee.csprojResolveAssemblyReference.cache
+G:\diyl\thing\bee\ionic\ionic v1\examples\koperz\engine\alpha\src\Bee\obj\Debug\Bee.dll
+G:\diyl\thing\bee\ionic\ionic v1\examples\koperz\engine\alpha\src\Bee\obj\Debug\Bee.pdb
